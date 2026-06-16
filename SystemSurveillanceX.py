@@ -25,13 +25,13 @@ def CreateLog(FolderName):
     
     timestamp=time.strftime("%Y-%m-%d_%H-%M-%S")
     
-    FileName=os.path.join(FolderName,"Marvellous_%s.log" %timestamp)
+    FileName=os.path.join(FolderName,"  _%s.log" %timestamp)
     print("Log file gets created with name :",FileName)
 
     fobj=open(FileName,"w")
 
     fobj.write(Border+"\n")
-    fobj.write("----- Marvellous Platform Surveillance System-----\n")
+    fobj.write("-----    Platform Surveillance System-----\n")
     fobj.write("Log created at: "+ time.ctime()+"\n")
     fobj.write(Border+"\n\n")
     fobj.write("-----------------System Report-------------------\n")
@@ -118,7 +118,7 @@ def main():
 
     Border="-"*50
     print(Border)
-    print("----- Marvellous Platform Surveillance System-----")
+    print("-----    Platform Surveillance System-----")
     print(Border)
 
     if(len(sys.argv)==2):
@@ -143,7 +143,7 @@ def main():
             print("Unable to proceed as there is no such option")
             print("please use --h or --u to get more details")
 
-    # Python Demo.py 5 Marvellous
+    # Python Demo.py 5   
     elif(len(sys.argv)==3):
         print("Inside projects logic")
         print("Time interval :",sys.argv[1])

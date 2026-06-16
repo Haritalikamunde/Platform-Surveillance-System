@@ -118,7 +118,7 @@ def main():
 
     Border="-"*50
     print(Border)
-    print("-----    Platform Surveillance System-----")
+    print("-----Platform Surveillance System-----")
     print(Border)
 
     if(len(sys.argv)==2):
